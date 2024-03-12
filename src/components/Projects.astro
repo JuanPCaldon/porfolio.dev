@@ -4,7 +4,11 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-
+import Reactjs from "./icons/Reactjs.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import Boostrap from "./icons/Boostrap.astro"
+import Html5 from "./icons/Html.astro"
+import Css3 from "./icons/Css3.astro"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -16,25 +20,98 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  JAVASCRIPT:{
+    name: "JavaScript",
+    class: "bg-[#FFD300] text-black",
+    icon: JavaScript,
+  },
+  REACT:{
+      name: "React.JS",
+      class: "bg-[#61DBFB] text-black",
+      icon: Reactjs,
+  },
+
+  BOOSTRAP:{
+      name:"Boostrap",
+      class: "bg-[#003159] text-white ",
+      icon: Boostrap,
+  },
+  HTML5:{
+      name:"HTML5",
+      class: "bg-[#e34c26] text-white",
+      icon: Html5,
+  },
+  CSS3:{
+    name:"CSS3",
+    class:"bg-[#2965f1] text-white",
+    icon: Css3,
+
+  },
+
+
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Heroes Spa",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Explora el fascinante universo de tus héroes cinematográficos favoritos. Descripciones, imágenes y películas en un solo lugar. Creado desde cero con React.",
+    link: "https://heroesspareact10.netlify.app",
+    github: "https://github.com/JuanPCaldon/Heros-Spa",
+    image: "/projects/heroes-spa.png",
+    tags: [TAGS.REACT,TAGS.JAVASCRIPT,TAGS.BOOSTRAP],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Gift-Expert-App",
+    description:
+      "Explora GIFs fácilmente con nuestra app React. Busca cualquier cosa y disfruta de resultados instantáneos gracias a la integración de una API. ¡Descubre y comparte en segundos!.",
+    link: "https://giftexpertappreact101.netlify.app",
+    image: "/projects/GifExpertAPP.png",
+    github: "https://github.com/JuanPCaldon/React-Gift-experte-app",
+    tags: [TAGS.REACT, TAGS.JAVASCRIPT],
+  },
+  {
+    
+    title: "Festival de musica",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    link: "https://festivalmusicrockapp.netlify.app",
+    github:"https://github.com/JuanPCaldon/Gulp-Sas-y-HTML"    ,
+    image: "/projects/Festival.png",
+    tags: [TAGS.HTML5, TAGS.CSS3],
+
   },
+  {  
+    title:"Blog Caffe",
+    description:
+    "Explora el fascinante universo del café en nuestro blog. Reserva tu lugar para cursos exclusivos, conoce detalles sobre cada clase y asegura tu participación. Todo ello en una página web elegante y funcional, creada con HTML y CSS.",
+    link: "https://blogdecafejuancaldon.netlify.app/cursos",
+    github:"https://github.com/JuanPCaldon/blogdecafe"    ,
+    image: "/projects/Blogcafe.png",
+    tags: [TAGS.HTML5, TAGS.CSS3],
+  },
+
+  { 
+    title:"FrontEnd Store",
+    description:
+    "Explora el fascinante universo del café en nuestro blog. Reserva tu lugar para cursos exclusivos, conoce detalles sobre cada clase y asegura tu participación. Todo ello en una página web elegante y funcional, creada con HTML y CSS.",
+    link: "https://storefronted10.netlify.app",
+    github:"https://github.com/JuanPCaldon/FrontEndStore"    ,
+    image: "/projects/front-endstore.png",
+    tags: [TAGS.HTML5, TAGS.CSS3],
+  },
+
+  { 
+    title:"Mi primera App",
+    description:
+    "Bienvenido a mi primera app como desarrollador frontend! Descubre una experiencia diseñada con entusiasmo y aprendizaje. Explora la interfaz amigable, donde la creatividad se encuentra con la funcionalidad. Aunque sea mi inicio, cada línea de código refleja mi dedicación al aprendizaje y al desarrollo web. ¡Explora, aprende y disfruta.",
+    link: "https://miprimeraappjuancaldon.netlify.app",
+    github:"https://github.com/JuanPCaldon/freelancer"    ,
+    image: "/projects/PrimeraApp.png",
+    tags: [TAGS.HTML5, TAGS.CSS3],
+  },
+
+
+ 
 ]
 ---
 
